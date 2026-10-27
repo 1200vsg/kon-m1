@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the KONAMI Server eFootball website and submit player information.">
+    <meta name="author" content="CSC 216 Student">
+    <title>Contact | KONAMI SERVER</title>
+    <link rel="stylesheet" href="csc.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">KONAMI <span>SERVER</span></div>
+
+    <ul class="nav-links">
+        <li><a href="CSC216_Lab1.html">Home</a></li>
+        <li><a href="About_us.html">About</a></li>
+        <li><a href="Players.html">Players</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main class="section">
+    <div class="container">
+
+        <h1 class="section-title">Join the <span>eFootball</span> Community</h1>
+
+        <p class="section-intro">
+            Tell us about your preferred player type, skills and position.
+            Your responses help demonstrate the interactive features of
+            this eFootball website.
+        </p>
+
+        <!-- HTML form with all required controls -->
+        <form action="https://httpbin.org/post" method="post">
+
+            <label for="player-name">Player Name:</label>
+            <input type="text"
+                   id="player-name"
+                   name="player_name"
+                   placeholder="Enter your name"
+                   required>
+
+            <label for="email">Email:</label>
+            <input type="text"
+                   id="email"
+                   name="email"
+                   placeholder="Enter your email">
+
+            <label for="comment">Why do you like eFootball?</label>
+            <textarea id="comment"
+                      name="comment"
+                      rows="6"
+                      placeholder="Write your answer here..."></textarea>
+
+            <p><strong>Preferred player type:</strong></p>
+
+            <input type="radio" id="legend" name="player_type" value="legend">
+            <label for="legend">Legend</label><br>
+
+            <input type="radio" id="epic" name="player_type" value="epic">
+            <label for="epic">Epic</label><br>
+
+            <input type="radio" id="featured" name="player_type" value="featured">
+            <label for="featured">Featured</label>
+
+            <br><br>
+
+            <p><strong>Favourite skills:</strong></p>
+
+            <input type="checkbox" id="dribbling" name="skills" value="dribbling">
+            <label for="dribbling">Dribbling</label><br>
+
+            <input type="checkbox" id="passing" name="skills" value="passing">
+            <label for="passing">Passing</label><br>
+
+            <input type="checkbox" id="shooting" name="skills" value="shooting">
+            <label for="shooting">Shooting</label><br>
+
+            <input type="checkbox" id="heading" name="skills" value="heading">
+            <label for="heading">Heading</label>
+
+            <br><br>
+
+            <label for="position">Preferred position:</label>
+            <select id="position" name="position">
+                <option value="gk">Goalkeeper</option>
+                <option value="defender">Defender</option>
+                <option value="midfielder">Midfielder</option>
+                <option value="forward">Forward</option>
+            </select>
+
+            <button type="submit">Submit Player Information</button>
+
+        </form>
+
+        <section class="section">
+            <div class="card blue-card">
+                <h2>Need More eFootball?</h2>
+                <p>
+                    Visit the
+                    <a href="https://www.konami.com/efootball/en/" target="_blank">
+                        official KONAMI eFootball website
+                    </a>
+                    for more information.
+                </p>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 KONAMI Server - eFootball CSC 216 Lab 1</p>
+</footer>
+
+</body>
+</html>
